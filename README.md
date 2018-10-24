@@ -38,7 +38,7 @@ Layer-finctionties-protoco1-hardware-data format
 
 
 # 資料存取控制
-
+```
 >* 強制存取控制(mandatory access control，MAC）
 在電腦資安領域指一種由作業系統約束的存取控制，目標是限制主體或發起者存取或對物件或目標執行某種操作的能力。
 
@@ -60,3 +60,4 @@ Layer-finctionties-protoco1-hardware-data format
 
 >* 角色基準存取控制(role-based access control)
 不同於強制存取控制以及任意存取控制直接賦予使用者權限，而是將權限賦予角色。
+```
