@@ -61,3 +61,17 @@ Layer-finctionties-protoco1-hardware-data format
  角色基準存取控制(role-based access control)
 不同於強制存取控制以及任意存取控制直接賦予使用者權限，而是將權限賦予角色。
 ```
+# Data remanence
+```
+Many operating systems, file managers, and other software provide a facility where a file is not immediately deleted when the user requests that action. Instead, the file is moved to a holding area, making it easy for the user to undo a mistake. Similarly, many software products automatically create backup copies of files that are being edited, to allow the user to restore the original version, or to recover from a possible crash (autosave feature).
+
+Even when an explicit deleted file retention facility is not provided or when the user does not use it, operating systems do not actually remove the contents of a file when it is deleted unless they are aware that explicit erasure commands are required, like on a solid-state drive. (In such cases, the operating system will issue the Serial ATA TRIM command or the SCSI UNMAP command to let the drive know to no longer maintain the deleted data.) Instead, they simply remove the file's entry from the file system directory, because this requires less work and is therefore faster, and the contents of the file—the actual data—remain on the storage medium. The data will remain there until the operating system reuses the space for new data. In some systems, enough filesystem metadata are also left behind to enable easy undeletion by commonly available utility software. Even when undelete has become impossible, the data, until it has been overwritten, can be read by software that reads disk sectors directly. Computer forensics often employs such software.
+
+Likewise, reformatting, repartitioning, or reimaging a system is unlikely to write to every area of the disk, though all will cause the disk to appear empty or, in the case of reimaging, empty except for the files present in the image, to most software.
+
+Finally, even when the storage media is overwritten, physical properties of the media may permit recovery of the previous contents. In most cases however, this recovery is not possible by just reading from the storage device in the usual way, but requires using laboratory techniques such as disassembling the device and directly accessing/reading from its components.[citation needed]
+
+The section on complications gives further explanations for causes of data remanence.
+```
+```
+```
