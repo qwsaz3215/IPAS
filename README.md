@@ -36,6 +36,12 @@ Layer-finctionties-protoco1-hardware-data format
 >* frame
 >* HUb
 
+# 非技術性風險
+
+裝置閉路監視系統時，應該儘量消除盲點 (blind spots)
+
+
+
 
 # 資料存取控制
 ```
